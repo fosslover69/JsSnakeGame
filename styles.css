@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+    background-color: #181b1e;
+    font-family: 'Pacifico', cursive;
+    cursor:none;
+    overflow: hidden;
+}
+.shape{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    background-color: #fcfcfc;
+}
+.food{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #fb7474;
+}
+.points{
+    color: #fcfcfc;
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.shape:nth-child(1){
+    transition: left 0.12s, top 0.12s ease;
+}
+.shape:nth-child(2){
+    transition: left 0.13s, top 0.13s ease;
+}
+.shape:nth-child(3){
+    transition: left 0.14s, top 0.14s ease;
+}
+.shape:nth-child(4){
+    transition: left 0.15s, top 0.15s ease;
+}
+.shape:nth-child(5){
+    transition: left 0.16s, top 0.16s ease;
+}
+.shape:nth-child(6){
+    transition: left 0.11s, top 0.11s ease;
+}
