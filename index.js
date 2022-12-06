@@ -26,8 +26,7 @@ food.style.top = `${topPx}px`;
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
-
-window.onmousemove = e => {
+function game(e) {
     for(i=0; i<items.length; i++){
         move(items[i], e.clientX, e.clientY);
     }
@@ -42,4 +41,11 @@ window.onmousemove = e => {
         points+=1;
         document.getElementById("points").innerHTML=points;
     }
+}
+window.onmousemove = e => {
+    game(e)
+}
+
+window.touchmove = e => {
+    game(e)
 }
