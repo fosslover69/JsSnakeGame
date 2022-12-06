@@ -7,7 +7,7 @@ const move = (item, x, y) => {
 
 // Logic to check if the shape catches food
 const catchFood = (l1, l2, t1, t2) => {
-    return  l2 >= l1-50 && l2 <= l1+50 && t2 >= t1-25 && t2 <= t1+25;
+    return  l2 >= l1-75 && l2 <= l1+75 && t2 >= t1-12.5 && t2 <= t1+12.5;
 }
 
 let points = 0;
