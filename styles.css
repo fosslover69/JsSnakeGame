@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root{
+    --dark: #181b1e;
+    --light: #fcfcfc;
+}
+.light-theme{
+    --dark: #fcfcfc;
+    --light: #181b1e;
+}
 body{
-    background-color: #181b1e;
+    background-color: var(--dark);
     font-family: 'Pacifico', cursive;
     cursor:none;
     overflow: hidden;
@@ -11,7 +19,7 @@ body{
     height: 25px;
     border-radius: 50px;
     transform: translate(-50%, -50%);
-    background-color: #fcfcfc;
+    background-color: var(--light);
 }
 .food{
     width: 10px;
@@ -20,11 +28,18 @@ body{
     background-color: #fb7474;
 }
 .points{
-    color: #fcfcfc;
+    color: var(--light);
     font-size: 50px;
+}
+.others {
+    display: flex;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 40px;
+    right: 15px;
+    cursor: pointer;
 }
 .shape:nth-child(1){
     transition: left 0.12s, top 0.12s ease;

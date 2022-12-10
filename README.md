@@ -10,5 +10,5 @@ https://user-images.githubusercontent.com/67329471/205931115-99762d8d-da70-4558-
 ## Todo
 - [ ] Make a better Shape 
 - [ ] Add different difficulities
-- [ ] Light Theme
+- [x] Light Theme
 - [ ] Wasm?
